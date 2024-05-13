@@ -1,0 +1,255 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+    /* background-image: url('../public/map.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.img{
+  z-index: -100;
+}
+
+.one{
+  width: 500px;
+  height: auto;
+  position: absolute;
+  bottom: 153px;
+  right: 500px;
+  transition: all 1s;
+}
+
+.one:hover{
+  transform: scale(1.3);
+}
+
+/* .hidden{
+  opacity: 0.1;
+} */
+
+
+
+.team{
+  position: absolute;
+  width: 200px;
+  top: 62%;
+  left: 65%;
+  transition: all 1s;
+  z-index: 1;
+}
+
+.lore{
+  position: absolute;
+  width: 200px;
+  top: 35%;
+  left: 26%;
+  transition: all 1s;
+  z-index: 2;
+}
+
+.roadmap{
+  position: absolute;
+  width: 200px;
+  top: 24%;
+  left: 50%;
+  transition: all 1s;
+  z-index: 1;
+}
+
+
+
+.castle{
+  position: absolute;
+  width: 300px;
+  top: 13%;
+  left: 7%;
+  transition: all 1s;
+}
+
+
+.castle:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(4px 4px 8px black);
+}
+
+.volcano{
+  position: absolute;
+  width: 500px;
+  top: 41%;
+  left: 18%;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.volcano:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(4px 4px 8px black);
+}
+
+
+
+
+.arenaog{
+  position: absolute;
+  width: 860px;
+  top: 44%;
+  left: 22%;
+  z-index: 1;
+  transition: all 1s;
+}
+
+.arenaog:hover{
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 1;
+  filter: drop-shadow(4px 4px 8px black);
+  opacity: 1;
+}
+
+.stairs{
+  position: absolute;
+  width: 500px;
+  top: 20%;
+  left: 36%;
+  transition: all 1s;
+}
+
+
+.stairs:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(4px 4px 8px black);
+  opacity: 1;
+}
+
+.unicorns{
+  position: absolute;
+  width: 150px;
+  top: 15%;
+  right: 5%;
+}
+
+.logo{
+  position: absolute;
+  width: 333px;
+  top: -3%;
+  right: 42%;
+  transition: all 400ms cubic-bezier(.17,.67,.72,1.49);
+  transform-style: preserve-3d;
+}
+
+/* .logo:hover{
+  transform-style: preserve-3d;
+  transform: scale(1.3);
+  filter: drop-shadow(8px 16px 8px white);
+}
+ */
+
+
+.wiggle{
+  transition: all;
+animation: wiggle 8s;
+animation-timing-function: ease-in-out;
+animation-fill-mode: both;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(-20px, 0); }
+  100% { transform: translate(40px, 0); }
+}
+
+
+
+
+
+.castlewiggle{
+  transition: all;
+/* animation: castlewiggle 8s; */
+animation-timing-function: ease-in-out;
+animation-fill-mode: both;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+}
+
+@keyframes castlewiggle {
+  0% { transform: translate(2px, 0); }
+  50% { transform: translate(30px, 0); }
+  100% { transform: translate(80px, 0); }
+}
+
+
+
+
+.logowiggle{
+  transition: all 1s ease-in-out;
+  animation: logowiggle 8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logowiggle {
+  0% { transform: scale(1);  }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1.5); }
+}
+
+
+
+
+.papy{
+  display: none;
+}
+
+
+
+.papyrus{
+  position: absolute;
+  width: 700px;
+  top: 25%;
+  left: 32%;
+  transition: all 1s;
+  z-index: 2;
+}
+
+.papytext{
+  position: absolute;
+  width: 700px;
+  top: 25%;
+  left: 32%;
+  transition: all 1s;
+  z-index: 2;
+}
