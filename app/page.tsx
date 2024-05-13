@@ -21,12 +21,12 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-     <img src="http://localhost:3000/temples.png" className="one" onMouseEnter={toggleHover}
+     <img src="/temples.png" className="one" onMouseEnter={toggleHover}
       onMouseLeave={toggleHover} />
   {/* <Draggable onDrag={dragged("#img")}> */}
 
   <div className='papy ${pappytoggle ? "" : "hidden"}' >
-  <img src="http://localhost:3000/papyrus.jpg" id="papyrus" className="papyrus" />
+  <img src="/papyrus.jpg" id="papyrus" className="papyrus" />
   <div className="papytext">
   <i className="fa fas fa-close fa-4x text-emerald-800" style={{right:"-10px", position:"absolute", top:"-20px"}}></i>
     <p className="text-black p-24" style={{fontSize:"15pt", textAlign:"justify"}}>
@@ -36,19 +36,19 @@ export default function Home() {
   </div>
 </div>
 
-    <img src="http://localhost:3000/team.png" id="team" className="team" />
-    <img src="http://localhost:3000/roadmap.png" id="roadmmap" className="roadmap" />
-    <img src="http://localhost:3000/lore.png" id="lore" className="lore" />
+    <img src="/team.png" id="team" className="team" />
+    <img src="/roadmap.png" id="roadmmap" className="roadmap" />
+    <img src="/lore.png" id="lore" className="lore" />
 
 
 
-    <img src="http://localhost:3000/ArchonsLogo.png" id="logo" className="logo logowiggle" />
-    <img src="http://localhost:3000/arenaog.png" id="arenaog" className="arenaog" onMouseDown={arenaclick} />
-    <img src="http://localhost:3000/stairs.png" id="stairs" className="stairs" />
-    <img src="http://localhost:3000/unicorns.png" id="unicorns" className="unicorns wiggle" />
-    <img src="http://localhost:3000/volcano.png" id="volcano" className="volcano" />
-    <img src="http://localhost:3000/castles.png" id="castle" className="castle castlewiggle" />
-    <img src="http://localhost:3000/base.jpg" id="base" className="img" />
+    <img src="/ArchonsLogo.png" id="logo" className="logo logowiggle" />
+    <img src="/arenaog.png" id="arenaog" className="arenaog" onMouseDown={arenaclick} />
+    <img src="/stairs.png" id="stairs" className="stairs" />
+    <img src="/unicorns.png" id="unicorns" className="unicorns wiggle" />
+    <img src="/volcano.png" id="volcano" className="volcano" />
+    <img src="/castles.png" id="castle" className="castle castlewiggle" />
+    <img src="/base.jpg" id="base" className="img" />
       {/* </Draggable> */}
 
       
